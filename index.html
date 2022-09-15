@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+
+</head>
+<body>
+    <section class="catalog">
+        <div class="container inner">
+            <!-- <h1>My cameras</h1> -->
+           
+        </div>
+
+        <!-- <header class="container header">
+            <nav class=header__nav >
+                <div class="button__container">
+                <button class = "catalog_button">Catalog</button></div>
+                <div class="button__container">
+                <button class = "add_camera">Add camera</button></div>
+            </nav>
+        </header> -->
+
+        <div class = "container find_header">
+            <h2>Find the camera you want</h2>
+        </div>
+        <div class = "container search">
+           
+            <label for="input_search">Write a name of camera</label>
+            <input type="text" id="find_input" name="input_search">
+            <div class="button__container">
+            <button id="find_button">Search</button>
+        </div>
+            <div class="button__container">
+            <button id ="cancel_find_button">Cancel</button>
+        </div>
+
+        </div>
+        <div class="container catalog__inner">
+            <div class="container left__bar">
+                <div class="button__container left__bar">
+
+                
+                <button id = "sort_button">Sort</button>
+            </div>
+            <div class="total_price" id ="total_price">
+                <p>Total price: </p>
+                <p class="total_price" >0</p>
+              </div>
+
+                <form id="add_form" class="add_form">
+                    <h3>Add your camera</h3>
+                    <br/>
+                    <div class= "input__block">
+                      <label for="exampleInputName1" class="form-label">Name of camera</label>
+                      <input type="text" required class="form-control" id="name_input" />
+                    </div>
+                    <div class="input__block">
+                      <label for="exampleInputDescription1" class="form-label"
+                        >Price</label>
+                      <input type="number" class="form-control" id="price_input" />
+                    </div>
+                    <div class="input__block">
+                        <label for="exampleInputDescription1" class="form-label"
+                          >Weight in kg</label>
+                        <input type="number" class="form-control" id="weight_input" />
+                      </div>
+                      <div class="input__block">
+                        <label for="exampleInputDescription1" class="form-label"
+                          >Zoom ratio</label>
+                        <input type="number" class="form-control" id="zoom_input" />
+                      </div>
+                     
+
+                    <div class="button__container" id = "button_container">
+                    <button id="submit_button" type="submit" >
+                      Submit
+                    </button>
+                    
+                    
+                </div>
+                  </form>
+
+                
+            </div>
+            <div class="modal">
+              <div class="modal-content">
+                <button id = "close_button">Close</button>
+                <p>Please enter all information</p>
+              </div>
+            </div>
+            <div class="container right__bar">
+                <ul id="items_container" class="catalog__items">
+                    <!-- <li  class="card" draggable="true">
+                    <img src = "images/camera_img1.png" class="item-container__image" alt="card"> 
+                        <div class="card-body">
+                          <h2 class="card-title">Name</h2>
+                          <p class="card-text">Description:</p>
+                          <div class="info__container">
+                         <div class="info__container small">
+                            <p class="card-text">Price: </p>
+                            <p class="card-text">Weight: </p>
+                            <p class="card-text">Zoom ratio: </p>
+                        </div>
+                        <div class="info__container small">
+                            <p class="card-text">200 </p>
+                            <p class="card-text">400 </p>
+                            <p class="card-text">32 </p>
+                        </div>
+                    </div>
+                utton id="${EDIT_BUTTON_PREFIX}${id}" type="button" class="btn btn-info">
+                            Edit
+                          </button>
+                        </div>
+                      </li> -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script type = "module" src="js/index.js"></script>
+</body>
+
+
+    
+</body>
+</html>
