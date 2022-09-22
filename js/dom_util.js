@@ -1,13 +1,10 @@
+
 const nameInput = document.getElementById("name_input");
 const priceInput = document.getElementById("price_input");
 const weightInput = document.getElementById("weight_input");
 const zoomInput = document.getElementById("zoom_input");
-const submitChanges = document.getElementById("submit_changes_button");
-
-const submitButton = document.getElementById("submit_button");
-const buttonContainer = document.getElementById("button_container");
-
 const itemsContainer = document.getElementById("items_container");
+const editWindow = document.getElementById("edit__window");
 
 export const EDIT_BUTTON_PREFIX = 'edit-button-';
 
@@ -59,6 +56,12 @@ export const addItemToPage = ({id, name, price, weight, zoom}) =>{
     );
    
     const element = document.getElementById(getItemId(id));
+    const editButton = document.getElementById(`edit-button${id}`);
+    editButton.addEventListener("click", (event) => {
+        editWindow.style.display = "block";
+
+        
+    });
     
 };
 

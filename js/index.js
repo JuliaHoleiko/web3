@@ -1,5 +1,5 @@
 import {
-    EDIT_BUTTON_PREFIX,
+    
     addItemToPage,
     clearInputs,
     sortItemsList,
@@ -9,15 +9,30 @@ import {
   } from "./dom_util.js";
 
 const submitButton = document.getElementById("submit_button");
-const submitChanges = document.getElementById("submit_button1");
 const findButton = document.getElementById("find_button");
 const cancelFindButton = document.getElementById( "cancel_find_button");
 const findInput = document.getElementById( "find_input");
 const sortButton = document.getElementById( "sort_button");
 const totalPrice = document.getElementById("total_price");
 const nameInput = document.getElementById("name_input");
+const priceInput = document.getElementById("price_input");
+const weightInput = document.getElementById("weight_input");
+const zoomInput = document.getElementById("zoom_input");
+
 let cameras = [];
 const closeButton = document.getElementById("close_button");
+const closeButtonEdit = document.getElementById("close_button_on_edit");
+
+const modalWindow = document.getElementById("modal");
+const editWindow = document.getElementById("edit__window");
+
+closeButton.addEventListener("click", (event) =>{
+    modalWindow.style.display = "none";
+});
+closeButtonEdit.addEventListener("click", (event) =>{
+    editWindow.style.display = "none";
+});
+
 
 
 const addItem = ({name ,price, weight, zoom}) => {
@@ -31,20 +46,15 @@ const addItem = ({name ,price, weight, zoom}) => {
     countPrice();
 };
 
-
 submitButton.addEventListener("click", (event)=>{
-    
     event.preventDefault();
-   
-    if(nameInput.value==""){
-        // alert("enter camera name");
     
-    
-  
-    }
-    else{
 
     const {name ,price, weight, zoom} = getInputValues();
+    if(name=="" || price=="" ||weight=="" || zoom==""){
+        modalWindow.style.display = "block";
+    }
+    else{
     clearInputs();
     addItem({
         name ,price, weight, zoom
@@ -77,4 +87,7 @@ const countPrice = () => {
         const filteredCameras = sortItemsList(cameras);
         renderItemsList(filteredCameras);
 ;})
+
+
     renderItemsList(cameras);
+
