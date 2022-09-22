@@ -1,0 +1,7 @@
+@import "./global.css";
+
+@import "./normalize.min.css";
+
+@import "./catalog.css";
+
+@import "./inner.css";
