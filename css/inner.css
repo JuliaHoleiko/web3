@@ -13,7 +13,9 @@
 }
 .container.catalog__inner{
     max-width: 1500px;
-    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: flex-start;
+
 
 }
 .container.left__bar{

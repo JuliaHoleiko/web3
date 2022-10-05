@@ -1,26 +1,13 @@
 {
-  "name": "cameras",
+  "name": "lab3_attemp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "npx browser-sync start --server --files ."
   },
-  "scripts": {
-    "start": "json-server db.json"
-  },
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JuliaHoleiko/web3.git"
-  },
-  "keywords": [],
+  
   "author": "",
-  "bugs": {
-    "url": "https://github.com/JuliaHoleiko/web3/issues"
-  },
-  "homepage": "https://github.com/JuliaHoleiko/web3#readme",
-  "dependencies": {
-    "json-server": "^0.17.0"
-  }
+  "license": "ISC"
+  
 }

@@ -1,15 +1,1 @@
-{
-    "users": [
-      {
-        "id": 1,
-        "name": "David",
-        "age": 30
-      },
-      {
-        "name": "John",
-        "id": 2,
-        "age": 40
-      }
-    ]
-  }
-  
+{"cameras": {"0": {"name": "cameraA", "price": "112", "weight": "11", "zoom": "22"}, "1": {"name": "canon 22", "price": "12220", "weight": "12", "zoom": "12"}}, "id": 4}

@@ -5,7 +5,12 @@ const weightInput = document.getElementById("weight_input");
 const zoomInput = document.getElementById("zoom_input");
 const itemsContainer = document.getElementById("items_container");
 const editWindow = document.getElementById("edit__window");
-
+const editNameInput = document.getElementById("name_input1");
+const editPriceInput = document.getElementById("price_input1");
+const editWeightInput = document.getElementById("weight_input1");
+const editZoomInput = document.getElementById("zoom_input1");
+const submitEdit = document.getElementById("submit_button1");
+const deleteItem = document.getElementById("delete_item");
 export const EDIT_BUTTON_PREFIX = 'edit-button-';
 
 export const getInputValues = () => {
@@ -14,6 +19,15 @@ export const getInputValues = () => {
         price : priceInput.value,
         weight : weightInput.value,
         zoom : zoomInput.value,
+    
+    };
+};
+export const getInputValuesEdit = () => {
+    return{
+        name : editNameInput.value,
+        price : editPriceInput.value,
+        weight : editWeightInput.value,
+        zoom : editZoomInput.value,
     
     };
 };
@@ -43,11 +57,13 @@ const itemTemplate = ({id, name, price, weight, zoom}) =>
                             <p class="card-text">${weight} kg </p>
                             <p class="card-text">${zoom} </p>
                         </div>
-                    </div><button id="edit-button${id}" type="button" class="btn btn-info">
+                    </div><button id="${EDIT_BUTTON_PREFIX}${id}" type="button" class="btn btn-info">
                             Edit
                           </button>
                         </div>
                       </li>`;
+
+
 
 export const addItemToPage = ({id, name, price, weight, zoom}) =>{
     itemsContainer.insertAdjacentHTML(
@@ -55,12 +71,15 @@ export const addItemToPage = ({id, name, price, weight, zoom}) =>{
         itemTemplate({id, name, price, weight, zoom})
     );
    
-    const element = document.getElementById(getItemId(id));
-    const editButton = document.getElementById(`edit-button${id}`);
+    const editButton = document.getElementById(`${EDIT_BUTTON_PREFIX}${id}`);
     editButton.addEventListener("click", (event) => {
         editWindow.style.display = "block";
-
-        
+        submitEdit.className =  `${id}`;
+        deleteItem.className = `${id}`;
+        editNameInput.value = name;
+        editPriceInput.value = price;
+        editWeightInput.value = weight;
+        editZoomInput.value = zoom;
     });
     
 };
