@@ -1,0 +1,40 @@
+.container.inner{
+    margin: 0 auto;
+    width: 1400px;
+    height: 400px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image:url("/images/main_photo.jpeg");
+    background-repeat: no-repeat;
+    
+  background-position: center;
+    
+    
+}
+.container.catalog__inner{
+    max-width: 1500px;
+    justify-items: flex-start;
+    align-items: flex-start;
+
+
+}
+.container.left__bar{
+    max-width: 250px;
+    flex-direction: column;
+    align-content: center;
+    border: 2px black;
+    margin: 0;
+    
+
+}
+
+.add_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

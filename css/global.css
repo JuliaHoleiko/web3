@@ -1,0 +1,110 @@
+body{
+    background-color: #424244;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1110px;
+    
+}
+.modal {
+    display: none;
+    position: fixed; 
+    padding-top: 50px;
+    left: 0; 
+    top: 0;
+    width: 100%;
+    height: 100%; 
+   
+    color: black;
+  }
+  .modal-content {
+    position: relative; 
+    background-color: white;
+    padding: 20px; 
+    margin: auto; 
+    width: 50%;  
+    text-align:  center;
+    
+    
+  }
+  .edit__window{
+    display: none;
+    position: fixed; 
+    left: 0; 
+    top: 25%;
+    left: 25%;
+    padding-top: 25px;
+    width: 50%;
+    height: 50%;
+    background-color: black ;
+    opacity: 90%;
+  }
+  .edit__box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .close_button {
+      height: 30px;
+      font-size: 14px;
+   
+}
+
+.alert__message{
+    position: fixed;
+    left: 50%;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: flex-end;
+    
+
+}
+button{
+    background: #A9A9A9;
+    width: 100px;
+    height: 50px;
+    font-size: 14px;    
+    border: 0;
+   
+}
+input{
+    background-color: #878787;
+    border: 0;
+    height: 26px;
+}
+.button__container{
+    margin: 15px;
+}
+
+label{
+    margin-right: 15px;
+}
+
+
+
+img{
+    height: 190px;
+}
+li{
+    display: block;
+}
+h3{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+
+.card-text{
+    margin: 2px;
+    text-align: start;
+}
