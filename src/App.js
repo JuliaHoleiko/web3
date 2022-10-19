@@ -1,8 +1,7 @@
 
 import styles from './App.css';
-import Header from './containers/Header';
-import Navigation from './containers/Navigation';
-import Footer from './containers/Footer';
+import Header from './containers/App/Header';
+import Footer from './containers/App/Footer';
 
 
 function App() {

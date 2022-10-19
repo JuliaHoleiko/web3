@@ -1,7 +1,7 @@
 
 import styles from "./Header.module.css"
-import Home from "./Home";
-import Catalog from "./Catalog";
+import Home from "../Home/Home";
+import Catalog from "../Catalog/Catalog";
 
 import {
     BrowserRouter as Router,

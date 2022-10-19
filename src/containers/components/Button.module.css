@@ -1,12 +1,14 @@
 .button {
-    color: ghostwhite;
-    background-color: #3457D5;
-    border-radius: 50px;
+    background-color: #808080;
+    border-radius: 10px;
     padding: 7px 14px;
     border: 0;
-    transition: background-color 0.2s ease-in;
+    width: 50%;
+    height: 50px;
+    font-size: 18px;
+    color: white;
 }
 
 .button:hover {
-    background-color: #32de84;
+    background-color: #c0c0c0;
 }

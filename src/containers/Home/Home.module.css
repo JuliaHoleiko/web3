@@ -1,0 +1,15 @@
+.cards{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 20px;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.view_more{
+    width: 20%;
+}
