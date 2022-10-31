@@ -3,6 +3,8 @@ import styles from "./Header.module.css"
 import Home from "../Home/Home";
 import Catalog from "../Catalog/Catalog";
 
+import ItemPage from "../Catalog/ItemPage";
+
 import {
     BrowserRouter as Router,
     Routes,
@@ -13,6 +15,7 @@ import {
 
 export default function Header(props) {
     return (
+        
         <div>
         <header className={styles.header}>
             <div className={styles.logo}>
@@ -37,11 +40,14 @@ export default function Header(props) {
 
       
             <div>
+          
             <Routes>
                 <Route  exact path="/" element = {<Home/>}/>
                 <Route  exact path="/catalog" element = {<Catalog/>} />
                 <Route  exact path="/cart"  />
+                <Route exact path='/camera' element={<ItemPage />} />
             </Routes>
+            
             </div>
             </Router>
             

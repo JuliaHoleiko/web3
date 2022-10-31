@@ -9,7 +9,8 @@ export default function SearchField(props) {
         <p >
             Name:
         </p>
-        <input type="text" name="name" className={`${styles.input} ${props.className}`} />
+        <input type="text" name="name" className={`${styles.input} ${props.className}`}  value={props.inputValue}
+        onChange={(e) => props.onInputValueChange(e.target.value)}/>
         
         </div>
     </form>
