@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.img{
+    width: 500px;
+}
+.button{
+    width: 300px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: grey;
+}
+.text{
+    font-size: 20px;
+    margin: 10px;
+}
+.select_color{
+    height: 40px;
+    width: 200px;
+}
