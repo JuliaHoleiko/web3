@@ -1,0 +1,16 @@
+.img{
+    width: 600px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px;
+    text-align: center;
+}
+.text_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
