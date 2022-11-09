@@ -19,7 +19,7 @@ def get():
 
 
 @app.route('/<string:sort_by>/<string:sort_order>', methods=['GET'])
-def get(sort_by: str, sort_order: str):
+def get_items(sort_by: str, sort_order: str):
     cursor.execute('SELECT * FROM cameras;')
     cameras = cursor.fetchall()
     if(sort_by=='no'):

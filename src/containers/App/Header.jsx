@@ -2,7 +2,7 @@
 import styles from "./Header.module.css"
 import Home from "../Home/Home";
 import Catalog from "../Catalog/Catalog";
-
+import Cart from "../Cart/Cart";
 import ItemPage from "../Catalog/ItemPage";
 
 import {
@@ -44,7 +44,7 @@ export default function Header(props) {
             <Routes>
                 <Route  exact path="/" element = {<Home/>}/>
                 <Route  exact path="/catalog" element = {<Catalog/>} />
-                <Route  exact path="/cart"  />
+                <Route  exact path="/cart"  element = {<Cart/>}/>
                 <Route exact path='/camera' element={<ItemPage />} />
             </Routes>
             

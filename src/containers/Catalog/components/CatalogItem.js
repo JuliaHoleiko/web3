@@ -16,7 +16,7 @@ export default function CatalogItem(props) {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 100);
     getCameras(sortBy, sortOrder).then(res => {
         
         let itemList = [];
