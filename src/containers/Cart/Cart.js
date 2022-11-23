@@ -30,6 +30,11 @@ export default function Cart() {
         <Link to='/catalog'>
             <Button className={styles.button} text = "Back"></Button>
         </Link>
+        <Link to= '/checkout'>
+            <Button className={styles.button} text="Buy"></Button>
+        </Link>
+
+        
     </div>
   )
 }

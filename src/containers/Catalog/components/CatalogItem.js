@@ -16,7 +16,7 @@ export default function CatalogItem(props) {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 100);
+    }, 1000);
     getCameras(sortBy, sortOrder).then(res => {
         
         let itemList = [];
@@ -38,7 +38,7 @@ export default function CatalogItem(props) {
         <p className={styles.p}>Zoom: {camera.zoom}</p>
         <p className={styles.p}>Weight: {camera.weight}</p>
         <Link to='/camera' state={{ name: camera.name, price: camera.price, weight: camera.weight, zoom: camera.zoom, image: cameraImg }}>
-        <Button className={styles.view_more} text = "View more"/>
+          <Button className={styles.view_more} text = "View more"/>
         </Link>
        
     </li>

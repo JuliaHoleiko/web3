@@ -4,7 +4,8 @@ import Home from "../Home/Home";
 import Catalog from "../Catalog/Catalog";
 import Cart from "../Cart/Cart";
 import ItemPage from "../Catalog/ItemPage";
-
+import Checkout from "../Cart/Checkout/Checkout";
+import Success from "../Cart/Checkout/Success";
 import {
     BrowserRouter as Router,
     Routes,
@@ -46,6 +47,8 @@ export default function Header(props) {
                 <Route  exact path="/catalog" element = {<Catalog/>} />
                 <Route  exact path="/cart"  element = {<Cart/>}/>
                 <Route exact path='/camera' element={<ItemPage />} />
+                <Route exact path='/checkout' element={<Checkout />} />
+                <Route exact path='/success' element={<Success/>} />
             </Routes>
             
             </div>
